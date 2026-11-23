@@ -63,3 +63,19 @@ Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
 - Analyze Snort alerts and investigate network events.
 - Understand network routing and packet forwarding.
 - Develop practical blue team and SOC analyst skills.
+
+## Project Roadmap
+
+- [x] Set up three virtual machines.
+- [x] Configure NAT and Host-only networks.
+- [x] Assign IP addresses.
+- [x] Configure Ubuntu server as a router.
+- [x] Enable IPv4 forwarding.
+- [x] Establish connectivity between Kali and Metasploitable 2.
+- [x] Install Snort 2.9.20.
+- [x] Configure Snort $HOME_NET.
+- [ ] Configure Snort monitoring interface.
+- [ ] Configure and understand detection rules.
+- [ ] Generate test traffic from Kali linux.
+- [ ] Detect suspicious activity using Snort.
+- [ ] Analyze and document Snort alerts.
