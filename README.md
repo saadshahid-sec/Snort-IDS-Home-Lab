@@ -82,3 +82,15 @@ Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
 - [ ] Generate test traffic from Kali linux.
 - [ ] Detect suspicious activity using Snort.
 - [ ] Analyze and document Snort alerts.
+
+## Project Status
+
+**Current Stage:** Initial lab setup completed.
+
+- Network architecture configured
+- Three virtual machines connected.
+- Snort 2.9.20 installed.
+- Initial network connectivity verfied.
+- Github documentation and Screenshots added.
+
+**Next Phase:** Snort configuration, traffic monitoring, and intrusion detection testing.
