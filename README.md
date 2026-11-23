@@ -17,6 +17,9 @@ The lab consists of three virtual machines running in **VMware Workstation**.
 | VM 2 | Ubuntu server | Router and IDS 
 | VM 3 | Metasploitable 2 | Vulnerable Target
 
+### Lab Environment
+![Three-machine Snort IDS Lab](screenshots/01-vmware-lab-environment.png)
+
 ### Network Architecture
 The lab uses two virtual networks:
 - NAT Network: Connects Kali linux and Ubuntu server.
