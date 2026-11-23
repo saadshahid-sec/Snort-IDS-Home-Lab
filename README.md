@@ -42,3 +42,13 @@ Ubuntu server acts as a router between these networks using IPv4 forwarding.
 Kali linux communicates with Metaspolitable 2 through Ubuntu server rather than directly.
 
 Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
+
+## Technologies Used
+
+- **VMware Workstation 17 Player** - Virtualization platform
+- **Kali linux** - Attacker
+- **Ubuntu Server 24.04.5 LTS** - Router and IDS
+- **Metasploitable 2** - Vulnerable target machine
+- **Snort 2.9.20** - Network intrusion detection system
+- **Netplan** - Ubuntu network configuration (Permanent Static IP) 
+- **Linux networking tools** - Routing, IP addressing, and connectivity testing
