@@ -31,3 +31,14 @@ Ubuntu server acts as a router between two networks and monitors traffic through
 | Ubuntu Server | ens33 | 192.168.243.135 | NAT | 
 | Ubuntu Server | ens37 | 192.168.26.128 | Host-only | 
 | Metasploitable 2 | eth1 | 192.168.26.10 | Host-only |
+
+## Network Design 
+The lab uses two seperate network segments: 
+- **NAT Network (192.168.243.0/24):** Connects Kali linux to Ubuntu server.
+- **Host-only Network (192.168.26.0):** Connects Ubuntu server to Metasploitable 2.
+
+Ubuntu server acts as a router between these networks using IPv4 forwarding.
+
+Kali linux communicates with Metaspolitable 2 through Ubuntu server rather than directly.
+
+Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
