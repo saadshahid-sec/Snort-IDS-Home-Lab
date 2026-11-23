@@ -52,3 +52,14 @@ Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
 - **Snort 2.9.20** - Network intrusion detection system
 - **Netplan** - Ubuntu network configuration (Permanent Static IP) 
 - **Linux networking tools** - Routing, IP addressing, and connectivity testing
+
+## Learning Objectives
+
+- Understand how network intrusion detection systems work.
+- Learn how Snort analyzes network traffic.
+- Configure and manage Snort detection rules.
+- Monitor network traffic and identify suspcious activity.
+- Generate test traffic using Kali linux.
+- Analyze Snort alerts and investigate network events.
+- Understand network routing and packet forwarding.
+- Develop practical blue team and SOC analyst skills.
