@@ -23,3 +23,11 @@ The lab uses two virtual networks:
 - Host-only Network: Connects Ubuntu server and Metasploitable 2.
 
 Ubuntu server acts as a router between two networks and monitors traffic through its host-only interface using Snort.
+
+## IP Addressing
+| Virtual Machine | Network Interface | IP Address | Network |
+|---|---|---|---|
+| Kali linux | eth0 | 192.168.243.129 | NAT | 
+| Ubuntu Server | ens33 | 192.168.243.135 | NAT | 
+| Ubuntu Server | ens37 | 192.168.26.128 | Host-only | 
+| Metasploitable 2 | eth1 | 192.168.26.10 | Host-only |
