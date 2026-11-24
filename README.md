@@ -18,7 +18,9 @@ The lab consists of three virtual machines running in **VMware Workstation**.
 | VM 3 | Metasploitable 2 | Vulnerable Target
 
 ### Lab Environment
-![Three-machine Snort IDS Lab](screenshots/01-vmware-lab-environment.png)
+<img width="1672" height="941" alt="Snort 2 IDS Home Lab Topology" src="https://github.com/user-attachments/assets/ebbcd1a2-1dd1-4a54-a2c2-d8dce971b0c4" />
+
+
 
 ### Network Architecture
 The lab uses two virtual networks:
