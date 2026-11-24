@@ -13,4 +13,3 @@ alert tcp any any -> 192.168.26.10 21 (msg: "FTP Connection Attempt Detected"; s
 
 
 
-
