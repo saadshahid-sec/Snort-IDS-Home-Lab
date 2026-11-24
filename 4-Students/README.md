@@ -16,7 +16,7 @@ During my Snort lab setup, I faced compatibility and configuration difficulties 
 This experience taught me an important lesson: choosing the right OS version before starting a cybersecurity lab can save a lot of time.
 
 ## My Advice to Students
-- Prefer Ubuntu 24.04 LTS for this lab
+- Prefer Ubuntu 24.04 LTS for this lab.     ***Download Ubuntu 24.04***: https://ubuntu.com/download/server#manual-install-tab
 - Check Snort's compatibility with your Ubuntu version before installation
 - Follow installation instructions that match your OS
 - Don't immediately assume every installation error is caused by your configuration
