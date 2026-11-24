@@ -55,6 +55,58 @@ Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
 - **Snort 2.9.20** - Network intrusion detection system
 - **Netplan** - Ubuntu network configuration (Permanent Static IP) 
 - **Linux networking tools** - Routing, IP addressing, and connectivity testing
+- **Nmap** - Port scan
+
+## Snort Configuration
+- Snort version: ``2.9.20``
+- Configuration file: ``/etc/snort/snort.conf``
+- Local rules file: ``/etc/snort/rules/local.rules``
+- Monitoring interface: ``ens37``
+- Protected Network: $HOME_NET ( **192.168.26.0/24** )
+- Custom rules loaded through **local.rules**
+- Fast alert output tested for file-based logging.
+
+## Custom Detection Rules and Experiments
+The following detection activities were implemented and tested in the lab.
+
+| Experiment | Detection Objective |
+|---|---|
+| ICMP Echo request | Detect incoming ping requests |
+| ICMP Echo reply | Detect ping responses | 
+| TCP SYN | Detect initial TCP connection attempts |
+| TCP SYN-ACK | Detect server connection responses |
+| TCP ACK | Observe TCP acknowledgement packet | 
+| SSH | Detect connection attempt targeting TCP port 22 | 
+| FTP | Detect TCP traffic target port 21 |
+| Nmap | Perform TCP SYN port against the target | 
+
+## Alert Logging Analysis
+Snort was tested using fast alert output mode.
+
+Alert logs were generated in:
+``/var/log/snort/alert``
+
+The logs provided evidence of detected ICMP, SSH, FTP related network acivity.
+
+Alert analysis involved examining:
+- Alert messages
+- Source and destination IP addresses
+- Network protocols
+- Source and destination ports
+- Timestamps
+- Snort rule identifiers (SIDs)
+
+## Learning Outcomes
+Through this project, I gained pratical experience with:
+
+- Building an isolated virtual network
+- Configure Linux routing and IPv4 forwarding
+- Understanding NIDS (Network Intrusion Detection System)
+- Installing and configuring Snort 2
+- Writing and testing custom Snort rules
+- Monitoring ICMP, SSH, and FTP related traffic
+- Analysing Snort alerts and file-based logs
+
 
 ## Learning Objectives
 
@@ -84,12 +136,9 @@ Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
 
 ## Project Status
 
-**Current Stage:** Initial lab setup completed.
+Lab implementation and core detection experiments completed.
 
-- Network architecture configured
-- Three virtual machines connected.
-- Snort 2.9.20 installed.
-- Initial network connectivity verfied.
-- Github documentation and Screenshots added.
+## Disclamer
+*This project is intended for educational purposes and  authorized security testing only.*
 
-**Next Phase:** Snort configuration, traffic monitoring, and intrusion detection testing.
+*All experiments were conducted within an isolated virtual lab environment. No unauthorized systems or networks were targeted.*
