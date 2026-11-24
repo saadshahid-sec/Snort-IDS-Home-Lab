@@ -77,11 +77,10 @@ Snort monitors network traffic on Ubuntu Server's host-only interface (`ens37`).
 - [x] Establish connectivity between Kali and Metasploitable 2.
 - [x] Install Snort 2.9.20.
 - [x] Configure Snort $HOME_NET.
-- [ ] Configure Snort monitoring interface.
-- [ ] Configure and understand detection rules.
-- [ ] Generate test traffic from Kali linux.
-- [ ] Detect suspicious activity using Snort.
-- [ ] Analyze and document Snort alerts.
+- [x] Configure Snort monitoring interface.
+- [x] Configure and understand detection rules.
+- [x] Generate test traffic from Kali linux.
+- [x] Detect suspicious activity using Snort.
 
 ## Project Status
 
